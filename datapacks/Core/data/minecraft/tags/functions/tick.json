@@ -1,5 +1,6 @@
 {
 	"values": [
+		"core:tick",
 		"core:util/time/tick"
 	]
 }

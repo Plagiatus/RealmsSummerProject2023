@@ -27,3 +27,8 @@ scoreboard players add $time core.time_value 0
 
 execute store result score #world_border_diameter core.time_value run worldborder get
 scoreboard players operation #previous_world_border_diameter core.time_value = #world_border_diameter core.time_value
+
+# ID system
+scoreboard objectives add core.id dummy
+
+execute unless score $nextPlayer core.id = $nextPlayer core.id run scoreboard players set $nextPlayer core.id 1
