@@ -17,8 +17,10 @@ scoreboard objectives add tr_id dummy
 # range between a natural husk event occurs, in ticks
 execute unless score $husk_min_wait tr_settings = $husk_min_wait tr_settings run scoreboard players set $husk_min_wait tr_settings 1200
 execute unless score $husk_max_wait tr_settings = $husk_max_wait tr_settings run scoreboard players set $husk_max_wait tr_settings 1800
-# duration until the husk looses interest by force, in ticks
-execute unless score $husk_loose_interest tr_settings = $husk_loose_interest tr_settings run scoreboard players set $husk_loose_interest tr_settings 600
+# duration until the husk looses interest by force, in ticks, negative
+execute unless score $husk_loose_interest tr_settings = $husk_loose_interest tr_settings run scoreboard players set $husk_loose_interest tr_settings -600
+# duration of the husk sniffing around for a hidden player, in ticks
+execute unless score $husk_look_for_player tr_settings = $husk_look_for_player tr_settings run scoreboard players set $husk_look_for_player tr_settings 200
 
 # max distance squared (in meters) for fastest heartbeat
 execute unless score $fast_heart_distance tr_settings = $fast_heart_distance tr_settings run scoreboard players set $fast_heart_distance tr_settings 64
