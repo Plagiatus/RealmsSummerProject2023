@@ -7,3 +7,5 @@ effect clear @a[tag=!tr_hiding] invisibility
 
 execute as @s[scores={tr_husk_cd=0}] run function tr:husk/start
 execute as @s[scores={tr_husk_cd=..-1}] run function tr:husk/active
+tag @a[tag=tr_hiding] add tr_was_hiding
+tag @a[tag=!tr_hiding] remove tr_was_hiding
