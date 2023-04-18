@@ -1,6 +1,6 @@
 # TODO change fire
 
-# set new timeout for new husk event to happen
+# set new timeout for new automatic husk event to happen
 scoreboard players operation RNG_MIN core.random = $husk_min_wait tr_settings
 scoreboard players operation RNG_MAX core.random = $husk_max_wait tr_settings
 function core:util/random

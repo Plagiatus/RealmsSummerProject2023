@@ -1,3 +1,5 @@
+# Running while the husk event is active
+
 # tag relevant husk
 execute as @e[type=husk,tag=tr_husk] if score @s tr_id = @p core.id run tag @s add tr_current_husk
 

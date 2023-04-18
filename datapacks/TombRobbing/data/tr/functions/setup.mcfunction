@@ -33,9 +33,10 @@ execute unless score $slow_heart_delay tr_settings = $slow_heart_delay tr_settin
 
 ## const values
 scoreboard players set 1000 const 1000
+scoreboard players set 16 const 16
 
 ## Automatically generated setting helper values based on the above values
-## If these settings can be changed ingame, make sure to run these at game start
+## If these relevant settings can be changed ingame, make sure to run these lines at game start
 scoreboard players operation $delta_heart_distance tr_settings = $slow_heart_distance tr_settings
 scoreboard players operation $delta_heart_distance tr_settings -= $fast_heart_distance tr_settings
 
